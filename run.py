@@ -1,4 +1,6 @@
 import gspread
+import colorama
+from colorama import Fore
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -25,9 +27,9 @@ def start():
     print('\nHello, welcome to laundry booking!\n')
     print('Please type in your name to book a time,\nor to see current bookings.\n')
     print('____________\n')
-    print('Enjoy your day!')
-    print('____________\n')
+    print(Fore.GREEN + 'Enjoy your day!')
+    print(Fore.WHITE + '____________\n')
     print('Enter your name: ')
     name = input()
-    
+
 start_up = start()
