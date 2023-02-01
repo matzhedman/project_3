@@ -110,6 +110,7 @@ def show_my_booking():
     No bookings? -> a message that says "No current booking"
     """
     print('Your bookings')
+    
 
 # Log out
 def log_out():
@@ -140,8 +141,6 @@ def times():
             choice = int(input('Type in number to choose an option: \n'))
         except ValueError:
             print("Not a valid number")
-        if choice == 1:
-            print('placeholder1')
         summary()
 
 
@@ -161,6 +160,9 @@ def summary():
     elif answer == 'no':
         os.system('clear')
         choose_a_day()
+    else:
+        print('Please answer "yes" or "no". Try again!')
+    summary()
 
 def main():
     """
@@ -168,7 +170,9 @@ def main():
     """
     start_up = start()
     menu = mainMenu()
+    bookings = show_my_booking()
     laundry_times = times()
+    
     summary_end = summary()
 
 
