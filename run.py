@@ -96,7 +96,24 @@ def choose_a_day():
             print('You chose Saturday.')
         elif choice == 7:
             print('You chose Sunday.')
-        
+
+
+# Times
+def times():
+    os.system('clear')
+    print('\nPlease choose a time: \n')
+
+    print('1) 7.00 AM - 11.00 AM')
+    print('2) 11.00 AM - 3.00 PM')
+    print('3) 3.00 PM - 7.00 PM')
+    print('4) 7.00 PM - 10.00 PM')
+    while True:
+        try:
+            choice = int(input('Type in number to choose an option: \n'))
+        except ValueError:
+            print("Not a valid number")
+        if choice == 1:
+            print('placeholder1')
 
 start_up = start()
 menu = mainMenu()
