@@ -98,6 +98,16 @@ def choose_a_day():
             print('You chose Sunday.')
         times()
 
+# Show my bookings menu
+def show_my_booking():
+    """
+    Function not working yet. Bookings should be added to spreadsheet, 
+    when going in to this menu it should get all bookings, if any, from the spreadsheet
+    and show it here. 
+    No bookings? -> a message that says "No current booking"
+    """
+    print('Your bookings')
+    
 # Log out
 def log_out():
     os.system('clear')
