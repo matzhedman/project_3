@@ -98,6 +98,11 @@ def choose_a_day():
             print('You chose Sunday.')
         times()
 
+# Log out
+def log_out():
+    os.system('clear')
+    print(Fore.RED + '\nYou are logged out!')
+    print(Fore.WHITE + '____________\n')
 
 # Times
 def times():
