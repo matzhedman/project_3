@@ -96,6 +96,7 @@ def choose_a_day():
             print('You chose Saturday.')
         elif choice == 7:
             print('You chose Sunday.')
+        times()
 
 
 # Times
