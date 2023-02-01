@@ -68,5 +68,35 @@ def mainMenu():
         else:
             print('Not a valid number, please choose 1), 2) or 00).')
 
+# Choose a day
+def choose_a_day():
+    os.system('clear')
+    print('Choose a day:\n')
+    days = SHEET.worksheet('laundry_days').get_all_values()
+
+    for day in days:
+        print(day)
+    while True:
+        try:
+            choice = int(input('\nType in a number to choose a day: \n'))
+        except ValueError:
+            print('Not a valid number')
+
+        if choice == 1:
+            print('You chose Monday.')
+        elif choice == 2:
+            print('You chose Tuesday.')
+        elif choice == 3:
+            print('You chose Wednesday.')
+        elif choice == 4:
+            print('You chose Thursday.')
+        elif choice == 5:
+            print('You chose Friday.')
+        elif choice == 6:
+            print('You chose Saturday.')
+        elif choice == 7:
+            print('You chose Sunday.')
+        
+
 start_up = start()
 menu = mainMenu()
