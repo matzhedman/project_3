@@ -12,5 +12,22 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('project_3') 
 
-days = SHEET.worksheet('laundry_days').get_all_values()
-print(days)
+"""
+To run the program: python3 run.py
+"""
+
+
+def start():
+    """
+    First view, asks you to type in your name.
+    Name should be logged and be added to the summary in the end - not working yet.
+    """
+    print('\nHello, welcome to laundry booking!\n')
+    print('Please type in your name to book a time,\nor to see current bookings.\n')
+    print('____________\n')
+    print('Enjoy your day!')
+    print('____________\n')
+    print('Enter your name: ')
+    name = input()
+    
+start_up = start()
