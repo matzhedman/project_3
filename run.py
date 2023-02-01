@@ -146,5 +146,14 @@ def summary():
         os.system('clear')
         choose_a_day()
 
-start_up = start()
-menu = mainMenu()
+def main():
+    """
+    Run all program functions
+    """
+    start_up = start()
+    menu = mainMenu()
+    laundry_times = times()
+    summary_end = summary()
+
+
+main()
