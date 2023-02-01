@@ -1,5 +1,7 @@
 import gspread
 import colorama
+import os
+import datetime
 from colorama import Fore
 from google.oauth2.service_account import Credentials
 
@@ -32,4 +34,18 @@ def start():
     print('Enter your name: ')
     name = input()
 
+def mainMenu():
+    """
+    Menu. 
+    Shows the day and date of today.
+    """
+    os.system('clear')
+    x = datetime.datetime.now()
+    print('____________\n')
+    print("Date and time of today:")
+    print(x.strftime("%A"))
+    print(x.strftime("%x"))
+    print('____________\n')
+
 start_up = start()
+menu = mainMenu()
