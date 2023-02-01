@@ -107,7 +107,7 @@ def show_my_booking():
     No bookings? -> a message that says "No current booking"
     """
     print('Your bookings')
-    
+
 # Log out
 def log_out():
     os.system('clear')
@@ -130,6 +130,21 @@ def times():
             print("Not a valid number")
         if choice == 1:
             print('placeholder1')
+        
+        summary()
+
+
+def summary():
+    os.system('clear')
+    print('This is the day "day should appear here"\n')
+    print('Would you like to confirm, and go back to Start?')
+    answer = input("(yes / no)\n")
+    if answer == 'yes':
+        os.system('clear')
+        main()
+    elif answer == 'no':
+        os.system('clear')
+        choose_a_day()
 
 start_up = start()
 menu = mainMenu()
