@@ -172,7 +172,6 @@ def main():
     menu = mainMenu()
     bookings = show_my_booking()
     laundry_times = times()
-    
     summary_end = summary()
 
 
