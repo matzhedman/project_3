@@ -16,15 +16,13 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('project_3') 
 
-"""
-To run the program: python3 run.py
-"""
 
-
+#Start
 def start():
     """
-    First view, asks you to type in your name.
-    Name should be logged and be added to the summary in the end - not working yet.
+    Prints a welcome message and asks user to type in a name.
+    Hit Enter to pass this stage, validation of text not working.
+    After that it takes you to Menu page.
     """
     print('\nHello, welcome to laundry booking!\n')
     print('Please type in your name to book a time,\nor to see current bookings.\n')
@@ -71,6 +69,10 @@ def mainMenu():
 
 # Choose a day
 def choose_a_day():
+    """
+    Clears the terminal and calls for Days from linked spreadsheet.
+    Prints days found in worksheet "laundry_days".
+    """
     os.system('clear')
     print('Choose a day:\n')
     days = SHEET.worksheet('laundry_days').get_all_values()
@@ -111,6 +113,10 @@ def show_my_booking():
 
 # Log out
 def log_out():
+    """
+    Clears terminal
+    Prints message in red and goes back to the start view.
+    """
     os.system('clear')
     print(Fore.RED + '\nYou are logged out!')
     print(Fore.WHITE + '____________\n')
@@ -118,6 +124,10 @@ def log_out():
 
 # Times
 def times():
+    """
+    Clears terminal.
+    Prints out times and offers four options.
+    """
     os.system('clear')
     print('\nPlease choose a time: \n')
 
@@ -132,13 +142,17 @@ def times():
             print("Not a valid number")
         if choice == 1:
             print('placeholder1')
-        
         summary()
 
 
 def summary():
+    """
+    Clears terminal.
+    Asks the user if he/she wants to confirm booking.
+    "Yes" and the program starts from the beginning.
+    "No" and the user gets back to the options of days.
+    """
     os.system('clear')
-    print('This is the day "day should appear here"\n')
     print('Would you like to confirm, and go back to Start?')
     answer = input("(yes / no)\n")
     if answer == 'yes':
@@ -150,7 +164,7 @@ def summary():
 
 def main():
     """
-    Run all program functions
+    Run all program functions.
     """
     start_up = start()
     menu = mainMenu()
