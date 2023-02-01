@@ -38,6 +38,7 @@ def mainMenu():
     """
     Menu. 
     Shows the day and date of today.
+    Gives three choices to navigate further.
     """
     os.system('clear')
     x = datetime.datetime.now()
@@ -113,6 +114,7 @@ def log_out():
     os.system('clear')
     print(Fore.RED + '\nYou are logged out!')
     print(Fore.WHITE + '____________\n')
+    main()
 
 # Times
 def times():
