@@ -73,9 +73,17 @@ This is a laundry booking system for small rental properties.
 ![flowchart_current](/documents/images/pp3_flowchart2.png)
 
 
-### Features
-
 ### Features Left to Implement
+* This is a flowchart of the expected final version. 
+![flowchart_expected](/documents/images/pp3_flowchart.png)
+* Features to implement:
+    * Login-function that validates input data.
+    * A function that requests data from spreadsheet with calender-data.
+    * A Calender that shows the whole month, and all available days (not times in this stage to avoid too much information).
+    * The possibility to choose an available time and after booking it, it should not appear as an available time for next user.
+    * A function that requests data for current users booking, if any, from calender data in spreadsheet. Otherwise print a message of "{Username} has no current booking".
+    * Validation of all input.
+
 
 
 
