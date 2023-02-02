@@ -46,21 +46,28 @@ This is a laundry booking system for small rental properties.
 
 * After entering a name, the user will continue to a part where the todays date is displayed (updates for every day so it always will show current date).
 * There is also three (3) options for the user to choose between:
+
 ![mainmenu](/documents/images/pp3_main_menu.png)
 
 ##### OPTION 1 ("1")
 * Option "1) Book a Time" takes the user to the book menu and will first show a list of days, monday - sunday. Data comes from the spreadsheet.
+
 ![option1](/documents/images/pp3_option_1.png)
 * After choosing a day, either one, by typing in a number between 1 to 7 and hit Enter, the program will continue to ask the user to choose a Time for laundry on that specific day. The user has four (4) options, see picture below:
+
 ![time](/documents/images/pp3_time.png)
 * Coming this far the user has reached the last part of this section (Section: "1) Book a Time"). The user is asked to confirm the booking by typing "yes" or "no". "Yes" will take the user back to the start view. "No" will take the user back to choosing day for laundry.
+
 ![yes_no](/documents/images/pp3_yes_no.png)
 
 ##### OPTION 2 ("2")
 * Option "2) Show all current Bookings" takes the user in to the view where the current booking for the chosen username is displayed. ALERT! This function is currently not working due to a bug in the system. Our developers are working on solving the problem. As for now, following messages is to be displayed when the function is working correctly:
-    * Current booking exists
+* Current booking exists
+
 ![show_booking](/documents/images/pp3_show_booking.png)
-    * No current booking
+
+* No current booking
+
 ![show_booking2](/documents/images/pp3_show_booking2.png)
 
 ##### OPTION 3 ("00")
@@ -70,11 +77,13 @@ This is a laundry booking system for small rental properties.
 ## Structure
 ### Logical Flow
 * I have created a flowchart of the structure for this program. Following flow is as the program works right now. See section of [Features left to Implement](#Features-Left-to-Implement) for the expected final version.
+
 ![flowchart_current](/documents/images/pp3_flowchart2.png)
 
 
 ### Features Left to Implement
 * This is a flowchart of the expected final version. 
+
 ![flowchart_expected](/documents/images/pp3_flowchart.png)
 * Features to implement:
     * Login-function that validates input data.
@@ -86,6 +95,7 @@ This is a laundry booking system for small rental properties.
 
 ### Database design
 * A worksheet using "Google Sheets" has been implemented as database in this program. Current version is only using the spreadsheet of "laundry_days" to display days (monday to sunday). See picture below.
+
 ![worksheet](/documents/images/pp3_worksheet.png)
 
 ## Technologies
@@ -102,10 +112,7 @@ This is a laundry booking system for small rental properties.
 
 ## Testing
 ### Functional Testing
-    ----EMPTY---- 
-    ----EMPTY---- 
-    ----EMPTY---- 
-    ----EMPTY----   
+![functional_test](/documents/images/functional_test.png)
 
 
 
@@ -144,10 +151,26 @@ Can’t get this function to work.
 
 
 ## Deployment
-
 ### Version Control
+The site was created using the GitPod editor and pushed to github to the remote repository "project_3.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add .``` - This command was used to add the file(s) to the staging area before they are committed.
+```git commit -m "commit message"``` - This command was used to commit changes to the local repository queue ready for the final step.
+```git push``` - This command was used to push all committed code to the remote repository on github.
 
 ### Heroku Deployment
+The below steps were followed to deploy this project to Heroku:
+* Go to Heroku and click "New" to create a new app.
+* Choose an app name and region region, click "Create app".
+* Go to "Settings" and navigate to Config Vars. Add the following config variables:
+    * PORT : 8000
+    * CREDS : added info from creds.json file
+* Navigate to Buildpacks and add buildpacks for Python and NodeJS (in that order).
+* Navigate to "Deploy". Set the deployment method to Github and enter repository name and connect.
+* Scroll down to Manual Deploy, select "main" branch and click "Deploy Branch".
+* The app will now be deployed to heroku
 
 ## Credits
 ### Code
