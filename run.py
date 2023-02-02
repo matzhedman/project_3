@@ -174,11 +174,11 @@ def main():
     """
     Run all program functions.
     """
-    start_up = start()
-    menu = mainMenu()
-    bookings = show_my_booking()
-    # laundry_times = times()
-    # summary_end = summary()
+    start()
+    mainMenu()
+    show_my_booking()
+    times()
+    summary()
 
 
 main()
