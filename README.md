@@ -48,12 +48,20 @@ This is a laundry booking system for small rental properties.
 * There is also three (3) options for the user to choose between:
 ![mainmenu](/documents/images/pp3_main_menu.png)
 
-##### OPTION 1
+##### OPTION 1 ("1")
 * Option "1) Book a Time" takes the user to the book menu and will first show a list of days, monday - sunday. Data comes from the spreadsheet.
 ![option1](/documents/images/pp3_option_1.png)
 * After choosing a day, either one, by typing in a number between 1 to 7 and hit Enter, the program will continue to ask the user to choose a Time for laundry on that specific day. The user has four (4) options, see picture below:
 ![time](/documents/images/pp3_time.png)
 * Coming this far the user has reached the last part of this section (Section: "1) Book a Time"). The user is asked to confirm the booking by typing "yes" or "no". "Yes" will take the user back to the start view. "No" will take the user back to choosing day for laundry.
+![yes_no](/documents/images/pp3_yes_no.png)
+
+##### OPTION 2 ("2")
+* Option "2) Show all current Bookings" takes the user in to the view where the current booking for the chosen username is displayed. ALERT! This function is currently not working due to a bug in the system. Our developers are working on solving the problem. As for now, following messages is to be displayed when the function is working correctly:
+    * Current booking exists
+![show_booking](/documents/images/pp3_show_booking.png)
+    * No current booking
+![show_booking2](/documents/images/pp3_show_booking2.png)
 
 
        

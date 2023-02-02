@@ -105,11 +105,18 @@ def choose_a_day():
 def show_my_booking():
     """
     Function not working yet. Bookings should be added to spreadsheet, 
-    when going in to this menu it should get all bookings, if any, from the spreadsheet
+    when going in to this menu it should get the booking for this username, if any, from the spreadsheet
     and show it here. 
-    No bookings? -> a message that says "No current booking"
+    No bookings? -> a message that says "{username} has no current booking"
     """
-    print('Your bookings')
+    #current booking exists
+    print('\nThe {username} has a current booking on {day} at {time}.\n')
+    print('Change time or day? Press "00", enter the same Username and go to "1) Book a Time".\n') 
+    print('Only one time/username is allowed, booking a new time will overwrite the first.\n')
+    print('Enter "00" to go back, or "99" to cancel current booking')
+    
+    #no current booking
+    print('\n{Username} has no current booking')
     
 
 # Log out
@@ -163,6 +170,7 @@ def summary():
     else:
         print('Please answer "yes" or "no". Try again!')
     summary()
+
 
 def main():
     """
