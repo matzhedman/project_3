@@ -40,7 +40,24 @@ This is a laundry booking system for small rental properties.
 
 
 ### Existing Features
-* 
+#### Start menu
+* First when the program runs the user is being greeted and prompted to enter a name.
+![start](/documents/images/pp3_start.png)
+
+* After entering a name, the user will continue to a part where the todays date is displayed (updates for every day so it always will show current date).
+* There is also three (3) options for the user to choose between:
+![mainmenu](/documents/images/pp3_main_menu.png)
+
+##### OPTION 1
+* Option "1) Book a Time" takes the user to the book menu and will first show a list of days, monday - sunday. Data comes from the spreadsheet.
+![option1](/documents/images/pp3_option_1.png)
+* After choosing a day, either one, by typing in a number between 1 to 7 and hit Enter, the program will continue to ask the user to choose a Time for laundry on that specific day. The user has four (4) options, see picture below:
+![time](/documents/images/pp3_time.png)
+* Coming this far the user has reached the last part of this section (Section: "1) Book a Time"). The user is asked to confirm the booking by typing "yes" or "no". "Yes" will take the user back to the start view. "No" will take the user back to choosing day for laundry.
+
+
+       
+    
 
 ## Structure
 
