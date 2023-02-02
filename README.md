@@ -113,7 +113,6 @@ This is a laundry booking system for small rental properties.
 * start()
     * Name input validation not working, tried this in different variations:
 	![name_validation](/documents/images/pp3_input_validation.png)
-    
 
 * mainMenu()
 Validation doesn’t work. System crashes when anything else then 1, 2 or 00 is printed.
@@ -131,7 +130,7 @@ When typing anything else then ”yes” or ”no”; message not printed. Repea
     summary()
 
 * show_my_booking()
-Can’t get this function to work, not even to print message. 
+Can’t get this function to work. 
 
 
 ## Deployment

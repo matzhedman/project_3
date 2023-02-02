@@ -55,8 +55,8 @@ def mainMenu():
         try:
             choice = int(input('Type in number to choose an option: \n'))
         except ValueError:
-            print("Not a valid number")
-
+            print('Please use numeric digits.')
+            continue
         if choice == 1:
             choose_a_day()
             break
