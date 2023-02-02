@@ -102,6 +102,11 @@ This is a laundry booking system for small rental properties.
 
 ## Testing
 ### Functional Testing
+    ----EMPTY---- 
+    ----EMPTY---- 
+    ----EMPTY---- 
+    ----EMPTY----   
+
 
 
 ### Pep8 Validation
@@ -146,3 +151,10 @@ Can’t get this function to work.
 
 ## Credits
 ### Code
+* I used Code Institutes walkthrough project as tutorial for setting everything up and get the connection to my Worksheet, and also for steps to deploy my program to Heroku.
+
+* [Clear function](https://www.scaler.com/topics/how-to-clear-screen-in-python/) - this tutorial was used to implement the [os.system('clear')] function and by looking at a project made by "Supersheep50". See credit below.
+* [Change color on text](https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python) - this tutorial was used to implement color on text. 
+    * [Fix the colorama error](https://blog.finxter.com/fixed-modulenotfounderror-no-module-named-colorama/) - this tutorial was used to understand and to install "pip install colorama"-package.
+* [Datetime](https://www.w3schools.com/python/python_datetime.asp) - this tutorial was used to add datetime to Main Menu.
+* For solving my navigation through the menus and getting the "clear"-function mentioned above; without him noticing a special thanks to "Supersheep50" and his project The-Secret-of-the-HLL-Tomb. 
