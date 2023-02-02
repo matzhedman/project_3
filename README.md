@@ -84,7 +84,9 @@ This is a laundry booking system for small rental properties.
     * A function that requests data for current users booking, if any, from calender data in spreadsheet. Otherwise print a message of "{Username} has no current booking".
     * Validation of all input.
 
-
+### Database design
+* A worksheet using "Google Sheets" has been implemented as database in this program. Current version is only using the spreadsheet of "laundry_days" to display days (monday to sunday). See picture below.
+![worksheet](/documents/images/pp3_worksheet.png)
 
 
 
