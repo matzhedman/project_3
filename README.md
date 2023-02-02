@@ -105,6 +105,8 @@ This is a laundry booking system for small rental properties.
 ### Functional Testing
 
 ### Pep8 Validation
+* Python syntax checker at [Extends class](https://extendsclass.com/python-tester.html) was used to check the code. No error was found.
+![python-validator](/documents/images/pp3_python_validator.png)
 
 ### Bugs and Fixes
 #### Bugs
