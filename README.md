@@ -88,10 +88,17 @@ This is a laundry booking system for small rental properties.
 * A worksheet using "Google Sheets" has been implemented as database in this program. Current version is only using the spreadsheet of "laundry_days" to display days (monday to sunday). See picture below.
 ![worksheet](/documents/images/pp3_worksheet.png)
 
-
-
-
 ## Technologies
+* Python - Python was the main language to build this program.
+    * Python packages used:
+        - Colorama - this was used to add color to text.
+    
+    * Python module used:
+        - gspread - this API was used to connect to Google Sheet API.
+        - os - this module was used to import clear function of the terminal.
+        - datetime - this module was used to show current date in the Main menu.
+* Google Drive API - this was used to set upp credentials.
+* Google Sheet - this was used as a database.
 
 ## Testing
 
