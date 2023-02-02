@@ -63,17 +63,21 @@ This is a laundry booking system for small rental properties.
     * No current booking
 ![show_booking2](/documents/images/pp3_show_booking2.png)
 
-
-       
-    
+##### OPTION 3 ("00")
+* If neither option 1 or 2 is what the user wants, it's possible to log out of the laundry booking system by typing "00" and hit Enter. A short message in red in the top will appear, and next user is able to log in.
+![log_out](/documents/images/pp3_log_out.png)    
 
 ## Structure
+### Logical Flow
+* I have created a flowchart of the structure for this program. Following flow is as the program works right now. See section of [Features left to Implement](#Features-Left-to-Implement) for the expected final version.
+![flowchart_current](/documents/images/pp3_flowchart2.png)
+
 
 ### Features
 
 ### Features Left to Implement
 
-## Logical Flow
+
 
 ## Technologies
 
