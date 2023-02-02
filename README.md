@@ -101,27 +101,30 @@ This is a laundry booking system for small rental properties.
 * Google Sheet - this was used as a database.
 
 ## Testing
-
 ### Functional Testing
+
 
 ### Pep8 Validation
 * Python syntax checker at [Extends class](https://extendsclass.com/python-tester.html) was used to check the code. No error was found.
 ![python-validator](/documents/images/pp3_python_validator.png)
 
 ### Bugs and Fixes
-#### Bugs
 * start()
     * Name input validation not working, tried this in different variations:
 	![name_validation](/documents/images/pp3_input_validation.png)
 
 * mainMenu()
-Validation doesn’t work. System crashes when anything else then 1, 2 or 00 is printed.
+    * Validation doesn’t work. System crashes when anything else then 1, 2 or 00 is printed.
+        * Fixed! credits below.
 
 * choose_a_day()
-Validation doesn’t work. System crashes when anything else then 1 to 7 is printed.
+    * Validation doesn’t work. System crashes when anything else then 1 to 7 is printed.
+        * Partially fixed! See test result in [Functional Testing](#Functional-Testing).
 
 * times()
-Validation doesn’t work. System crashes when anything else then 1 to 4 is printed.
+    * Validation doesn’t work. System crashes when anything else then 1 to 4 is printed.
+        * Partially fixed! See test result in [Functional Testing](#Functional-Testing).
+
 
 * summary()
 When typing anything else then ”yes” or ”no”; message not printed. Repeats the question.
@@ -131,6 +134,8 @@ When typing anything else then ”yes” or ”no”; message not printed. Repea
 
 * show_my_booking()
 Can’t get this function to work. 
+
+
 
 
 ## Deployment

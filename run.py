@@ -84,7 +84,8 @@ def choose_a_day():
         try:
             choice = int(input('\nType in a number to choose a day: \n'))
         except ValueError:
-            print('Not a valid number')
+            print('Please use numeric digits.')
+            continue
 
         if choice == 1:
             print('You chose Monday.')
@@ -100,6 +101,8 @@ def choose_a_day():
             print('You chose Saturday.')
         elif choice == 7:
             print('You chose Sunday.')
+        else:
+            print('Not a valid number, please choose 1), 2) or 00).')
         times()
 
 # Show my bookings menu
@@ -148,7 +151,8 @@ def times():
         try:
             choice = int(input('Type in number to choose an option: \n'))
         except ValueError:
-            print("Not a valid number")
+            print('Please use numeric digits.')
+            continue
         summary()
 
 
